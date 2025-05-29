@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.star {
+  position: absolute;
+  background-color: white;
+  border-radius: 9999px;
+  animation: pulse-subtle 3s infinite ease-in-out;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.meteor {
+  position: absolute;
+  background: linear-gradient(225deg, white, transparent);
+  border-radius: 9999px;
+  opacity: 0;
+  animation-name: meteor;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes meteor {
+  0% {
+    transform: translate(0, 0) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(400px, 400px) rotate(45deg);
+    opacity: 0;
+  }
+}
