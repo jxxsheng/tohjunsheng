@@ -1,4 +1,4 @@
-import { Navbar } from './components/Navbar';
+import { Navbar } from './components/NavBar';
 import { StarryBackground } from './components/StarryBackground';
 import { About } from './pages/About';
 import { Footer } from './pages/Footer';
